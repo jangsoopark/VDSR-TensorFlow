@@ -251,7 +251,7 @@ PSNR performance plot on Set5
 
 ### Prerequisites
 
-- Python 3
+- **Python 3**
 
   > pip install -r requirements.txt
 
@@ -262,7 +262,7 @@ PSNR performance plot on Set5
   - Pillow
   - skimage
 
-- Matlab (for data generation and performance evaluation)
+- **Matlab** (for data generation and performance evaluation)
 
   - image processing toolbox
 
@@ -295,7 +295,7 @@ python main.py --model_name=vdsr **--is_train=False**
 
 ### Training dataset
 
-- vdsr_train.h5 [[download]](https://drive.google.com/file/d/1wiej51wFY0oYsoKF7gGiWZT5_t5mFt0f/view?usp=sharing)
+- vdsr_train.h5 [[download]](https://drive.google.com/file/d/1o2oom_hVWLAY-RqUfPvvulj5sz_Kbphs/view?usp=sharing)
 
 
 
