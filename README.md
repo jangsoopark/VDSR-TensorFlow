@@ -174,7 +174,7 @@ PSNR performance plot on Set5
   - Train Details for Comparison
     - Gradient Clipping parameter <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0001
     - Data Augmentation
-      - Rotation : 90°
+      - Rotation : 0°, 90°
       - Flip : left / right
 
 
@@ -297,7 +297,8 @@ python main.py --model_name=vdsr **--is_train=False**
 
 ### Training dataset
 
-- vdsr_train.h5 [[download]](https://drive.google.com/file/d/1o2oom_hVWLAY-RqUfPvvulj5sz_Kbphs/view?usp=sharing)
+- vdsr_train.h5
+  - rotation=[0°, 90°], flip=[left / right] [[download]](https://drive.google.com/file/d/1o2oom_hVWLAY-RqUfPvvulj5sz_Kbphs/view?usp=sharing)
 
 
 
