@@ -1,16 +1,15 @@
 .idea/
 
-./__pycache__/*
-./checkpoint/*
-./result/*
-./summary/*
-./validation/*
+__pycache__/*
+checkpoint/*
+result/*
+summary/*
+validation/*
 
 
-./data/__pycache__/*
-./data/train_data/*
-./data/test_data/*
+data/__pycache__/*
+data/train_data/*
+data/test_data/*
 
-./model/__pycache__/*
-
-./utils/__pycache__/*
+model/__pycache__/*
+utils/__pycache__/*
