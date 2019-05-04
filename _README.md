@@ -33,9 +33,9 @@ You can see more details from paper and author's project page
 
 | Layer (# layers)  | Filter size | Input Dimension | Output Dimension | Activation Function |
 | ----------------- | ----------- | --------------- | ---------------- | ------------------- |
-| Input Layer (1)   | <img src="https://tex.s2cms.ru/svg/%203%20%5Ctimes%203%20" alt=" 3 \times 3 " /> | 1               | 64               | ReLU                |
-| Hidden Layer (18) | <img src="https://tex.s2cms.ru/svg/%203%20%5Ctimes%203%20" alt=" 3 \times 3 " /> | 64              | 64               | ReLU                |
-| Output Layer (1)  | <img src="https://tex.s2cms.ru/svg/%203%20%5Ctimes%203%20" alt=" 3 \times 3 " /> | 64              | 1                | -                   |
+| Input Layer (1)   | $3\times 3$ | 1               | 64               | ReLU                |
+| Hidden Layer (18) | $3\times 3$ | 64              | 64               | ReLU                |
+| Output Layer (1)  | $3\times 3$ | 64              | 1                | -                   |
 
 - I/O 
 
@@ -54,36 +54,36 @@ You can see more details from paper and author's project page
 - Basic loss function
 
 
-<img src="https://tex.s2cms.ru/svg/%0ALoss(W)%3D%5Cfrac%7B1%7D%7B2%7D%7C%7Cy-f(x)%7C%7C%5E%7B2%7D%0A" alt="
+$$
 Loss(W)=\frac{1}{2}||y-f(x)||^{2}
-" />
+$$
 
 
 - Loss functions for **residual learning**
 
-<img src="https://tex.s2cms.ru/svg/%0ALoss(W)%3D%5Cfrac%7B1%7D%7B2%7D%7C%7Cr-f(x)%7C%7C%5E%7B2%7D%0A" alt="
+$$
 Loss(W)=\frac{1}{2}||r-f(x)||^{2}
-" />
+$$
 
 - Regularization
 
   - L2 regularization
 
-  <img src="https://tex.s2cms.ru/svg/%0A%20%20reg(W)%3D%5Cfrac%7B%5Clambda%7D%7B2%7D%5Csum_%7Bw%20%5Cin%20W%7D%20%7B%7C%7Cw%7C%7C%5E%7B2%7D%7D%0A%20%20" alt="
+  $$
   reg(W)=\frac{\lambda}{2}\sum_{w \in W} {||w||^{2}}
-  " />
+  $$
 
   
 
 - Notations
-  - <img src="https://tex.s2cms.ru/svg/W" alt="W" /> : Weights in VDSR
-  - <img src="https://tex.s2cms.ru/svg/y" alt="y" /> : ground truth (original high resolution image, HR)
-  - <img src="https://tex.s2cms.ru/svg/x" alt="x" /> : interpolated low resolution image (ILR)
-  - <img src="https://tex.s2cms.ru/svg/f(x)" alt="f(x)" /> : reconstructed super resolution image
-  - <img src="https://tex.s2cms.ru/svg/r" alt="r" /> : residual between HR and ILR
-    - <img src="https://tex.s2cms.ru/svg/r%20%3D%20y-x" alt="r = y-x" />
-  - <img src="https://tex.s2cms.ru/svg/%5Clambda" alt="\lambda" /> : regularization parameter
-    -  <img src="https://tex.s2cms.ru/svg/%5Clambda" alt="\lambda" /> : 0.0001
+  - $W$ : Weights in VDSR
+  - $y$ : ground truth (original high resolution image, HR)
+  - $x$ : interpolated low resolution image (ILR)
+  - $f(x)$ : reconstructed super resolution image
+  - $r$ : residual between HR and ILR
+    - $r = y-x$
+  - $\lambda$ : regularization parameter
+    -  $\lambda$ : 0.0001
 
 
 
@@ -113,9 +113,9 @@ Loss(W)=\frac{1}{2}||r-f(x)||^{2}
 
 - **Adjustable Gradient Clipping**
 
-  - Clip individual gradients to <img src="https://tex.s2cms.ru/svg/%5B-%5Cfrac%7B%5Ctheta%7D%7B%5Cgamma%7D%2C%20%5Cfrac%7B%5Ctheta%7D%7B%5Cgamma%7D%5D" alt="[-\frac{\theta}{\gamma}, \frac{\theta}{\gamma}]" />
-    - <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> denotes parameters for gradient clipping
-    - <img src="https://tex.s2cms.ru/svg/%5Cgamma" alt="\gamma" /> denotes learning rate
+  - Clip individual gradients to $[-\frac{\theta}{\gamma}, \frac{\theta}{\gamma}]$
+    - $\theta$ denotes parameters for gradient clipping
+    - $\gamma$ denotes learning rate
 
 - Epochs : 80
 
@@ -132,7 +132,7 @@ Loss(W)=\frac{1}{2}||r-f(x)||^{2}
   - Download from Author's page [[zip(train)]](https://cv.snu.ac.kr/research/VDSR/train_data.zip)
 - Bicubic interpolation is used for LR data acquisition
 - Data Augmentations (Rotation, flip) were used
-- Scale Factor : <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" /> <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" />, <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" />
+- Scale Factor : $\times 2$, $\times 3$, $\times 4$
 - Patch size : 41
 - Batch size : 64
 
@@ -145,7 +145,7 @@ Loss(W)=\frac{1}{2}||r-f(x)||^{2}
 - Set5, Set14, B100, Urban100
   - Download from Author's page [[zip(test)]](https://cv.snu.ac.kr/research/VDSR/test_data.zip)
 - Bicubic interpolation is used for LR data acquisition
-- Scale Factor : <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" />, <img src="https://tex.s2cms.ru/svg/4%5Ctimes%203" alt="4\times 3" />, <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" />
+- Scale Factor : $\times 2$, $\times 3$, $\times 4$
 
 ---
 
@@ -184,9 +184,9 @@ PSNR performance plot on Set5
 
 | scale      | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
 | ---------- | -------------- | --------------- | ---------------- |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" /> | 33.68 / 0.9304 | 37.53 / 0.9586  | 37.07 / 0.9576   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 30.40 / 0.8682 | 33.66 / 0.9213  | 33.20 / 0.9171   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 28.43 / 0.8104 | 31.35 / 0.8838  | 30.90 / 0.8756   |
+| $\times 2$ | 33.68 / 0.9304 | 37.53 / 0.9586  | 37.07 / 0.9576   |
+| $\times 3$ | 30.40 / 0.8682 | 33.66 / 0.9213  | 33.20 / 0.9171   |
+| $\times 4$ | 28.43 / 0.8104 | 31.35 / 0.8838  | 30.90 / 0.8756   |
 
 
 
@@ -194,31 +194,31 @@ PSNR performance plot on Set5
 
 | scale      | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
 | ---------- | -------------- | --------------- | ---------------- |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" /> | 30.24 / 0.8693 | 37.53 / 0.9586  | 32.67 / 0.9108   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 27.54 / 0.7746 | 33.66 / 0.9213  | 29.58 / 0.8295   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 26.00 / 0.7029 | 31.35 / 0.8838  | 27.81 / 0.7627   |
+| $\times 2$ | 30.24 / 0.8693 | 37.53 / 0.9586  | 32.67 / 0.9108   |
+| $\times 3$ | 27.54 / 0.7746 | 33.66 / 0.9213  | 29.58 / 0.8295   |
+| $\times 4$ | 26.00 / 0.7029 | 31.35 / 0.8838  | 27.81 / 0.7627   |
 
 - **B100**
 
 | scale      | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
 | ---------- | -------------- | --------------- | ---------------- |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" /> | 29.56 / 0.8442 | 37.53 / 0.9586  | 31.65 / 0.8943   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 27.21 / 0.7401 | 33.66 / 0.9213  | 28.66 / 0.7952   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 25.96 / 0.6697 | 31.35 / 0.8838  | 27.14 / 0.7217   |
+| $\times 2$ | 29.56 / 0.8442 | 37.53 / 0.9586  | 31.65 / 0.8943   |
+| $\times 3$ | 27.21 / 0.7401 | 33.66 / 0.9213  | 28.66 / 0.7952   |
+| $\times 4$ | 25.96 / 0.6697 | 31.35 / 0.8838  | 27.14 / 0.7217   |
 
 - **Urban100**
 
 | scale      | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
 | ---------- | -------------- | --------------- | ---------------- |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" /> | 26.88 / 0.8410 | 37.53 / 0.9586  | 30.20 / 0.9087   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 24.46 / 0.7358 | 33.66 / 0.9213  | 26.69 / 0.8178   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 23.14 / 0.6588 | 31.35 / 0.8838  | 24.85 / 0.7406   |
+| $\times 2$ | 26.88 / 0.8410 | 37.53 / 0.9586  | 30.20 / 0.9087   |
+| $\times 3$ | 24.46 / 0.7358 | 33.66 / 0.9213  | 26.69 / 0.8178   |
+| $\times 4$ | 23.14 / 0.6588 | 31.35 / 0.8838  | 24.85 / 0.7406   |
 
 ---
 
 ### Visual Quality
 
-- "img002" of Urban100 for scale factor <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" />
+- "img002" of Urban100 for scale factor $\times 2$
 
 | Ground Truth                                                 | Bicubic                                                      | VDSR(TensorFlow)                                             |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -278,8 +278,3 @@ python main.py --model_name=vdsr **--is_train=False**
 
 - vdsr_train.h5 [[download]](https://drive.google.com/file/d/1wiej51wFY0oYsoKF7gGiWZT5_t5mFt0f/view?usp=sharing)
 
-
-
----
-
-math equations are converted with [upmath.me](https://upmath.me/)
