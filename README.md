@@ -22,8 +22,8 @@ You can see more details from paper and author's project page
 
 ![VDSR Network Structure](./resources/figure/001-VDSR.png)
 
-- ILR denotes Interpolated Low Resolution image
-- SR denotes reconstructed super resolution image
+- **ILR** denotes Interpolated Low Resolution image
+- **SR** denotes reconstructed super resolution image
 
 
 
@@ -36,6 +36,8 @@ You can see more details from paper and author's project page
 | Input Layer (1)   | <img src="https://tex.s2cms.ru/svg/%203%20%5Ctimes%203%20" alt=" 3 \times 3 " /> | 1               | 64               | ReLU                |
 | Hidden Layer (18) | <img src="https://tex.s2cms.ru/svg/%203%20%5Ctimes%203%20" alt=" 3 \times 3 " /> | 64              | 64               | ReLU                |
 | Output Layer (1)  | <img src="https://tex.s2cms.ru/svg/%203%20%5Ctimes%203%20" alt=" 3 \times 3 " /> | 64              | 1                | -                   |
+
+> ReLU (Rectified Linear Unit)
 
 - I/O 
 
@@ -184,6 +186,10 @@ PSNR performance plot on Set5
       - Flip : left / right
 
 #### Average PSNR/SSIM
+
+> PSNR (Peak Signal-to-Noise Ratio)
+>
+> SSIM (Strutural SIMility)
 
 - <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001
 
