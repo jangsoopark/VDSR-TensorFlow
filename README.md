@@ -49,7 +49,7 @@ You can see more details from paper and author's project page
 
 ### Loss Function
 
-> \_loss_function(self, reg_parameter) in VDSR-TensorFlow/model/\_\__init\_\_.py
+> **\_loss_function(self, reg_parameter)** in VDSR-TensorFlow/model/\_\__init\_\_.py
 
 - Basic loss function
 
@@ -89,7 +89,7 @@ Loss(W)=\frac{1}{2}||r-f(x)||^{2}
 
 ### Optimization
 
-> \_optimization_function(self, grad_clip, momentum_rate) in VDSR-TensorFlow/model/\_\__init\_\_.py
+> **\_optimization_function(self, grad_clip, momentum_rate)** in VDSR-TensorFlow/model/\_\__init\_\_.py
 
 - Optimization Method 
 
@@ -166,7 +166,7 @@ PSNR performance plot on Set5
 #### Methods
 
 - Bicubic Interpolation 
-  - imresize(..., ..., 'bicubic') in Matlab
+  - **imresize(..., ..., 'bicubic')** in Matlab
 - VDSR (Original)
   - Author's MatConvNet implementation [[Code]](https://cv.snu.ac.kr/research/VDSR/VDSR_code.zip)
 - VDSR (TensorFlow)
@@ -246,6 +246,25 @@ PSNR performance plot on Set5
 > **On Linux** 
 >
 > - run.sh
+
+
+
+### Prerequisites
+
+- Python 3
+
+  > pip install -r requirements.txt
+
+  - tensorflow
+  - h5py
+  - numpy + mkl
+  - scipy
+  - Pillow
+  - skimage
+
+- Matlab (for data generation and performance evaluation)
+
+  - image processing toolbox
 
 
 
