@@ -223,3 +223,56 @@ PSNR performance plot on Set5
 | ![img002_gt](./resources/figure/005-1-visual_img002_gt.png)  | ![img002_gt](./resources/figure/005-2-visual_img002_lr.png)  | ![img002_gt](./resources/figure/005-3-visual_img002_sr.png)  |
 | ![img002_gt](./resources/figure/005-1-visual_img002_gt_part.png) | ![img002_gt](./resources/figure/005-2-visual_img002_lr_part.png) | ![img002_gt](./resources/figure/005-3-visual_img002_sr_part.png) |
 
+
+
+- ???
+- ???
+- ???
+
+
+
+
+
+---
+
+## Usage
+
+> **On Windows**
+>
+> - run.bat
+>
+> **On Linux** 
+>
+> - run.sh
+
+
+
+### Training Command
+
+- in run.bat/sh
+  - python main.py --model_name=vdsr **--is_train=True** --grad_clip=1e-3
+
+    
+
+If you want to change other parameters for training, please see the file
+
+> VDSR-TensorFlow/model/configurations.py 
+
+
+
+### Testing Command
+
+in run.bat
+
+python main.py --model_name=vdsr **--is_train=False**
+
+
+
+### Trained checkpoint in experiments
+
+- checkpoint [[download]](https://drive.google.com/file/d/1wiej51wFY0oYsoKF7gGiWZT5_t5mFt0f/view?usp=sharing)
+
+### Training dataset
+
+- vdsr_train.h5 [[download]](https://drive.google.com/file/d/1wiej51wFY0oYsoKF7gGiWZT5_t5mFt0f/view?usp=sharing)
+
