@@ -157,7 +157,7 @@ PSNR performance plot on Set5
 
 - <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001
 
-| ![scale2](./resources/figure/004-1-validation_Set5_scale_2.png) | ![scale2](./resources/figure/004-2-validation_Set5_scale_3.png) | ![scale2](./resources/figure/004-3-validation_Set5_scale_4.png) |
+| ![scale2](./resources/figure/004-1-validation_Set5_scale_2_1e-3.png) | ![scale2](./resources/figure/004-2-validation_Set5_scale_3_1e-3.png) | ![scale2](./resources/figure/004-3-validation_Set5_scale_4_1e-3.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Scale 2                                                      | Scale 3                                                      | Scale 4                                                      |
 
@@ -194,8 +194,6 @@ PSNR performance plot on Set5
 | <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" /> | 33.68 / 0.9304 | 37.53 / 0.9586  | 37.07 / 0.9576   |
 | <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 30.40 / 0.8682 | 33.66 / 0.9213  | 33.20 / 0.9171   |
 | <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 28.43 / 0.8104 | 31.35 / 0.8838  | 30.90 / 0.8756   |
-
-
 
 - **Set14**
 
@@ -237,8 +235,8 @@ PSNR performance plot on Set5
 
 | Ground Truth                                                 | Bicubic                                                      | VDSR(TensorFlow)                                             |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![img002_gt](./resources/figure/005-1-visual_img002_gt.png)  | ![img002_gt](./resources/figure/005-2-visual_img002_lr.png)  | ![img002_gt](./resources/figure/005-3-visual_img002_sr.png)  |
-| ![img002_gt](./resources/figure/005-1-visual_img002_gt_part.png) | ![img002_gt](./resources/figure/005-2-visual_img002_lr_part.png) | ![img002_gt](./resources/figure/005-3-visual_img002_sr_part.png) |
+| ![img002_gt](./resources/figure/005-1-visual_img002_gt_1e-3.png) | ![img002_gt](./resources/figure/005-2-visual_img002_lr_1e-3.png) | ![img002_gt](./resources/figure/005-3-visual_img002_sr_1e-3.png) |
+| ![img002_gt](./resources/figure/005-1-visual_img002_gt_part_1e-3.png) | ![img002_gt](./resources/figure/005-2-visual_img002_lr_part_1e-3.png) | ![img002_gt](./resources/figure/005-3-visual_img002_sr_part_1e-3.png) |
 
 -  <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009
   - In training
