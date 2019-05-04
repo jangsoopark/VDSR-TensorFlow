@@ -145,7 +145,7 @@ Loss(W)=\frac{1}{2}||r-f(x)||^{2}
 - Set5, Set14, B100, Urban100
   - Download from Author's page [[zip(test)]](https://cv.snu.ac.kr/research/VDSR/test_data.zip)
 - Bicubic interpolation is used for LR data acquisition
-- Scale Factor : <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" />, <img src="https://tex.s2cms.ru/svg/4%5Ctimes%203" alt="4\times 3" />, <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" />
+- Scale Factor : <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" />, <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" />, <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" />
 
 ---
 
@@ -192,27 +192,27 @@ PSNR performance plot on Set5
 
 - **Set14**
 
-| scale      | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
-| ---------- | -------------- | --------------- | ---------------- |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" /> | 30.24 / 0.8693 | 37.53 / 0.9586  | 32.67 / 0.9108   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 27.54 / 0.7746 | 33.66 / 0.9213  | 29.58 / 0.8295   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 26.00 / 0.7029 | 31.35 / 0.8838  | 27.81 / 0.7627   |
+| scale                                                        | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
+| ------------------------------------------------------------ | -------------- | --------------- | ---------------- |
+| <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" /> | 30.24 / 0.8693 | 33.05 / 0.9214  | 32.67 / 0.9108   |
+| <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 27.54 / 0.7746 | 29.78 / 0.8318  | 29.58 / 0.8295   |
+| <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 26.00 / 0.7029 | 28.02 / 0.7678  | 27.81 / 0.7627   |
 
 - **B100**
 
-| scale      | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
-| ---------- | -------------- | --------------- | ---------------- |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" /> | 29.56 / 0.8442 | 37.53 / 0.9586  | 31.65 / 0.8943   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 27.21 / 0.7401 | 33.66 / 0.9213  | 28.66 / 0.7952   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 25.96 / 0.6697 | 31.35 / 0.8838  | 27.14 / 0.7217   |
+| scale                                                        | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
+| ------------------------------------------------------------ | -------------- | --------------- | ---------------- |
+| <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" /> | 29.56 / 0.8442 | 31.90 / 0.8960  | 31.65 / 0.8943   |
+| <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 27.21 / 0.7401 | 28.83 / 0.7976  | 28.66 / 0.7952   |
+| <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 25.96 / 0.6697 | 27.29 / 0.7252  | 27.14 / 0.7217   |
 
 - **Urban100**
 
-| scale      | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
-| ---------- | -------------- | --------------- | ---------------- |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" /> | 26.88 / 0.8410 | 37.53 / 0.9586  | 30.20 / 0.9087   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 24.46 / 0.7358 | 33.66 / 0.9213  | 26.69 / 0.8178   |
-| <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 23.14 / 0.6588 | 31.35 / 0.8838  | 24.85 / 0.7406   |
+| scale                                                        | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
+| ------------------------------------------------------------ | -------------- | --------------- | ---------------- |
+| <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" /> | 26.88 / 0.8410 | 30.77 / 0.9141  | 30.20 / 0.9087   |
+| <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 24.46 / 0.7358 | 27.14 / 0.8279  | 26.69 / 0.8178   |
+| <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 23.14 / 0.6588 | 25.18 / 0.7525  | 24.85 / 0.7406   |
 
 ---
 
@@ -262,8 +262,9 @@ PSNR performance plot on Set5
   - Pillow
   - skimage
 
-- **Matlab** (for data generation and performance evaluation)
+- **Matlab** 
 
+  - For data generation and performance evaluation
   - image processing toolbox
 
 
@@ -291,7 +292,7 @@ python main.py --model_name=vdsr **--is_train=False**
 
 ### Trained checkpoint in experiments
 
-- checkpoint [[download]](https://drive.google.com/file/d/1wiej51wFY0oYsoKF7gGiWZT5_t5mFt0f/view?usp=sharing)
+- checkpoint (grad_clip=1e-3) [[download]](https://drive.google.com/file/d/1wiej51wFY0oYsoKF7gGiWZT5_t5mFt0f/view?usp=sharing)
 
 ### Training dataset
 
