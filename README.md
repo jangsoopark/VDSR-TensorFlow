@@ -155,11 +155,17 @@ Loss(W)=\frac{1}{2}||r-f(x)||^{2}
 
 PSNR performance plot on Set5
 
+- <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001
+
 | ![scale2](./resources/figure/004-1-validation_Set5_scale_2.png) | ![scale2](./resources/figure/004-2-validation_Set5_scale_3.png) | ![scale2](./resources/figure/004-3-validation_Set5_scale_4.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Scale 2                                                      | Scale 3                                                      | Scale 4                                                      |
 
+- <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009
 
+  - in training
+
+    
 
 ### Objective Quality Assessment
 
@@ -172,13 +178,14 @@ PSNR performance plot on Set5
 - VDSR (TensorFlow)
   - TensorFlow implementation
   - Train Details for Comparison
-    - Gradient Clipping parameter <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0001
+    - Gradient Clipping parameter <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001
     - Data Augmentation
       - Rotation : 0°, 90°
       - Flip : left / right
 
-
 #### Average PSNR/SSIM
+
+- <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001
 
 - **Set5**
 
@@ -214,22 +221,27 @@ PSNR performance plot on Set5
 | <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 24.46 / 0.7358 | 27.14 / 0.8279  | 26.69 / 0.8178   |
 | <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 23.14 / 0.6588 | 25.18 / 0.7525  | 24.85 / 0.7406   |
 
+
+
+-  <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009
+  - In training
+
+
+
 ---
 
 ### Visual Quality
 
-- "img002" of Urban100 for scale factor <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" />
+- **"img002" of Urban100 for scale factor <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" />**
+-  <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 1e-3
 
 | Ground Truth                                                 | Bicubic                                                      | VDSR(TensorFlow)                                             |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![img002_gt](./resources/figure/005-1-visual_img002_gt.png)  | ![img002_gt](./resources/figure/005-2-visual_img002_lr.png)  | ![img002_gt](./resources/figure/005-3-visual_img002_sr.png)  |
 | ![img002_gt](./resources/figure/005-1-visual_img002_gt_part.png) | ![img002_gt](./resources/figure/005-2-visual_img002_lr_part.png) | ![img002_gt](./resources/figure/005-3-visual_img002_sr_part.png) |
 
-
-
-
-
-
+-  <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009
+  - In training
 
 
 
@@ -291,9 +303,8 @@ python main.py --model_name=vdsr **--is_train=False**
 ### Trained checkpoint in experiments
 
 - checkpoint 
-  - Trained with <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0001 [[download]](https://drive.google.com/file/d/1wiej51wFY0oYsoKF7gGiWZT5_t5mFt0f/view?usp=sharing)
-  
-    
+  - Trained with <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001 [[download]](https://drive.google.com/file/d/1wiej51wFY0oYsoKF7gGiWZT5_t5mFt0f/view?usp=sharing)
+  - Trained with <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009 [in training]
 
 ### Training dataset
 
