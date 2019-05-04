@@ -172,7 +172,7 @@ PSNR performance plot on Set5
 - VDSR (TensorFlow)
   - TensorFlow implementation
   - Train Details for Comparison
-    - Gradient Clipping parameter $\theta$ = 0.0001
+    - Gradient Clipping parameter <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0001
     - Data Augmentation
       - Rotation : 90°
       - Flip : left / right
@@ -227,9 +227,7 @@ PSNR performance plot on Set5
 
 
 
-- ???
-- ???
-- ???
+
 
 
 
@@ -292,7 +290,10 @@ python main.py --model_name=vdsr **--is_train=False**
 
 ### Trained checkpoint in experiments
 
-- checkpoint (grad_clip=1e-3) [[download]](https://drive.google.com/file/d/1wiej51wFY0oYsoKF7gGiWZT5_t5mFt0f/view?usp=sharing)
+- checkpoint 
+  - Trained with <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0001 [[download]](https://drive.google.com/file/d/1wiej51wFY0oYsoKF7gGiWZT5_t5mFt0f/view?usp=sharing)
+  
+    
 
 ### Training dataset
 
