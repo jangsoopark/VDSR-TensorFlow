@@ -350,7 +350,7 @@ python main.py --model_name=vdsr **--is_train=False**
 
 - checkpoint 
   - Trained with <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001 [[download]](https://drive.google.com/file/d/1wiej51wFY0oYsoKF7gGiWZT5_t5mFt0f/view?usp=sharing)
-  - Trained with <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009 [in training]
+  - Trained with <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009 [[download]](https://drive.google.com/file/d/1LCicahSEcy3mrsC7okd2flOBCEqPDJ4w/view?usp=sharing)
 
 ### Training dataset
 
