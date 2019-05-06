@@ -165,9 +165,11 @@ PSNR performance plot on Set5
 
 - <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009
 
-  - in training
+| ![img](file://C:/Users/82109/Desktop/deep%20learning/super%20resolution/papers/vdsr/jangsoopark/vdsr/resources/figure/004-1-validation_Set5_scale_2_9e-4.png?lastModify=1557137360) | ![img](file://C:/Users/82109/Desktop/deep%20learning/super%20resolution/papers/vdsr/jangsoopark/vdsr/resources/figure/004-2-validation_Set5_scale_3_9e-4.png?lastModify=1557137360) | ![img](file://C:/Users/82109/Desktop/deep%20learning/super%20resolution/papers/vdsr/jangsoopark/vdsr/resources/figure/004-3-validation_Set5_scale_4_9e-4.png?lastModify=1557137360) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Scale 2                                                      | Scale 3                                                      | Scale 4                                                      |
 
-    
+
 
 ### Objective Quality Assessment
 
@@ -191,12 +193,14 @@ PSNR performance plot on Set5
 >
 > SSIM (Strutural SIMility)
 
+---
+
 - <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001
 
 - **Set5**
 
-| scale      | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
-| ---------- | -------------- | --------------- | ---------------- |
+| scale                                                        | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
+| ------------------------------------------------------------ | -------------- | --------------- | ---------------- |
 | <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" /> | 33.68 / 0.9304 | 37.53 / 0.9586  | 37.07 / 0.9576   |
 | <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 30.40 / 0.8682 | 33.66 / 0.9213  | 33.20 / 0.9171   |
 | <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 28.43 / 0.8104 | 31.35 / 0.8838  | 30.90 / 0.8756   |
@@ -225,10 +229,44 @@ PSNR performance plot on Set5
 | <img src="https://tex.s2cms.ru/svg/%5Ctimes%203" alt="\times 3" /> | 24.46 / 0.7358 | 27.14 / 0.8279  | 26.69 / 0.8178   |
 | <img src="https://tex.s2cms.ru/svg/%5Ctimes%204" alt="\times 4" /> | 23.14 / 0.6588 | 25.18 / 0.7525  | 24.85 / 0.7406   |
 
-
+---
 
 -  <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009
-  - In training
+-  **Set5**
+
+| scale                                         | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
+| --------------------------------------------- | -------------- | --------------- | ---------------- |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%202) | 33.68 / 0.9304 | 37.53 / 0.9586  | 37.14 / 0.9574   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%203) | 30.40 / 0.8682 | 33.66 / 0.9213  | 33.29 / 0.9171   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%204) | 28.43 / 0.8104 | 31.35 / 0.8838  | 30.95 / 0.8755   |
+
+-  **Set14**
+
+| scale                                         | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
+| --------------------------------------------- | -------------- | --------------- | ---------------- |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%202) | 30.24 / 0.8693 | 33.05 / 0.9214  | 32.74 / 0.9105   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%203) | 27.54 / 0.7746 | 29.78 / 0.8318  | 29.62 / 0.8291   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%204) | 26.00 / 0.7029 | 28.02 / 0.7678  | 27.84 / 0.7628   |
+
+-  **B100**
+
+| scale                                         | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
+| --------------------------------------------- | -------------- | --------------- | ---------------- |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%202) | 29.56 / 0.8442 | 31.90 / 0.8960  | 31.69 / 0.8936   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%203) | 27.21 / 0.7401 | 28.83 / 0.7976  | 28.68 / 0.7947   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%204) | 25.96 / 0.6697 | 27.29 / 0.7252  | 27.15 / 0.7214   |
+
+-  **Urban100**
+
+| scale                                         | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
+| --------------------------------------------- | -------------- | --------------- | ---------------- |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%202) | 26.88 / 0.8410 | 30.77 / 0.9141  | 30.29 / 0.9085   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%203) | 24.46 / 0.7358 | 27.14 / 0.8279  | 26.78 / 0.8186   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%204) | 23.14 / 0.6588 | 25.18 / 0.7525  | 24.90 / 0.7418   |
+
+---
+
+
 
 
 
@@ -237,7 +275,7 @@ PSNR performance plot on Set5
 ### Visual Quality
 
 - **"img002" of Urban100 for scale factor <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" />**
--  <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 1e-3
+-  <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001
 
 | Ground Truth                                                 | Bicubic                                                      | VDSR(TensorFlow)                                             |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -245,7 +283,11 @@ PSNR performance plot on Set5
 | ![img002_gt](./resources/figure/005-1-visual_img002_gt_part_1e-3.png) | ![img002_gt](./resources/figure/005-2-visual_img002_lr_part_1e-3.png) | ![img002_gt](./resources/figure/005-3-visual_img002_sr_part_1e-3.png) |
 
 -  <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009
-  - In training
+
+| Ground Truth                                                 | Bicubic                                                      | VDSR(TensorFlow)                                             |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![img](file://C:/Users/82109/Desktop/deep%20learning/super%20resolution/papers/vdsr/jangsoopark/vdsr/resources/figure/005-1-visual_img002_gt_9e-4.png?lastModify=1557138893) | ![img](file://C:/Users/82109/Desktop/deep%20learning/super%20resolution/papers/vdsr/jangsoopark/vdsr/resources/figure/005-2-visual_img002_lr_9e-4.png?lastModify=1557138893) | ![img](file://C:/Users/82109/Desktop/deep%20learning/super%20resolution/papers/vdsr/jangsoopark/vdsr/resources/figure/005-3-visual_img002_sr_9e-4.png?lastModify=1557138893) |
+| ![img](file://C:/Users/82109/Desktop/deep%20learning/super%20resolution/papers/vdsr/jangsoopark/vdsr/resources/figure/005-1-visual_img002_gt_part_9e-4.png?lastModify=1557138893) | ![img](file://C:/Users/82109/Desktop/deep%20learning/super%20resolution/papers/vdsr/jangsoopark/vdsr/resources/figure/005-2-visual_img002_lr_part_9e-4.png?lastModify=1557138893) | ![img](file://C:/Users/82109/Desktop/deep%20learning/super%20resolution/papers/vdsr/jangsoopark/vdsr/resources/figure/005-3-visual_img002_sr_part_9e-4.png?lastModify=1557138893) |
 
 
 
