@@ -157,19 +157,19 @@ Loss(W)=\frac{1}{2}||r-f(x)||^{2}
 
 PSNR performance plot on Set5
 
-- <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001
+- rotation=[0°, 90°], flip=[left / right], <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001
 
 | ![scale2](./resources/figure/004-1-validation_Set5_scale_2_1e-3.png) | ![scale3](./resources/figure/004-2-validation_Set5_scale_3_1e-3.png) | ![scale4](./resources/figure/004-3-validation_Set5_scale_4_1e-3.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Scale 2                                                      | Scale 3                                                      | Scale 4                                                      |
 
-- <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009
+- rotation=[0°, 90°], flip=[left / right], <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009
 
 | ![scale2](./resources/figure/004-1-validation_Set5_scale_2_9e-4.png) | ![scale3](./resources/figure/004-2-validation_Set5_scale_3_9e-4.png) | ![scale4](./resources/figure/004-3-validation_Set5_scale_4_9e-4.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Scale 2                                                      | Scale 3                                                      | Scale 4                                                      |
 
-- <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0008
+- rotation=[0°, 90°], flip=[left / right], <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0008
 
 | ![scale2](./resources/figure/004-1-validation_Set5_scale_2_8e-4.png) | ![scale3](./resources/figure/004-2-validation_Set5_scale_3_8e-4.png) | ![scale4](./resources/figure/004-3-validation_Set5_scale_4_8e-4.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -201,7 +201,7 @@ PSNR performance plot on Set5
 
 ---
 
-- <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001
+- rotation=[0°, 90°], flip=[left / right], <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001
 
 - **Set5**
 
@@ -237,7 +237,7 @@ PSNR performance plot on Set5
 
 ---
 
--  <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009
+-  rotation=[0°, 90°], flip=[left / right], <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009
 -  **Set5**
 
 | scale                                         | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
@@ -272,7 +272,7 @@ PSNR performance plot on Set5
 
 ---
 
--  <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0008
+-  rotation=[0°, 90°], flip=[left / right], <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0008
 -  **Set5**
 
 | scale                                         | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
@@ -312,21 +312,21 @@ PSNR performance plot on Set5
 ### Visual Quality
 
 - **"img002" of Urban100 for scale factor <img src="https://tex.s2cms.ru/svg/%5Ctimes%202" alt="\times 2" />**
--  <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001
+-  rotation=[0°, 90°], flip=[left / right], <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.001
 
 | Ground Truth                                                 | Bicubic                                                      | VDSR(TensorFlow)                                             |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![img002_gt](./resources/figure/005-1-visual_img002_gt_1e-3.png) | ![img002_lr](./resources/figure/005-2-visual_img002_lr_1e-3.png) | ![img002_sr](./resources/figure/005-3-visual_img002_sr_1e-3.png) |
 | ![img002_gt](./resources/figure/005-1-visual_img002_gt_part_1e-3.png) | ![img002_lr](./resources/figure/005-2-visual_img002_lr_part_1e-3.png) | ![img002_sr](./resources/figure/005-3-visual_img002_sr_part_1e-3.png) |
 
--  <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009
+-  rotation=[0°, 90°], flip=[left / right], <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0009
 
 | Ground Truth                                                 | Bicubic                                                      | VDSR(TensorFlow)                                             |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![img002_gt](./resources/figure/005-1-visual_img002_gt_9e-4.png) | ![img002_lr](./resources/figure/005-2-visual_img002_lr_9e-4.png) | ![img002_sr](./resources/figure/005-3-visual_img002_sr_9e-4.png) |
 | ![img002_gt](./resources/figure/005-1-visual_img002_gt_part_9e-4.png) | ![img_002_lr](./resources/figure/005-2-visual_img002_lr_part_9e-4.png) | ![img](./resources/figure/005-3-visual_img002_sr_part_9e-4.png) |
 
-- <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0008
+- rotation=[0°, 90°], flip=[left / right], <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0008
 
 | Ground Truth                                                 | Bicubic                                                      | VDSR(TensorFlow)                                             |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
