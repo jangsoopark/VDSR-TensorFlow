@@ -56,6 +56,7 @@ def run(config):
                     sr = sr.reshape(sr.shape[1: 3])
 
                     sr_ = utils.shave(sr, s)
+                    sr_ = sr_.astype(np.float64)
                     gt_image_ = utils.shave(gt_image, s)
 
                     _psnr = measure.compare_psnr(gt_image_, sr_)

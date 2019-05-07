@@ -169,6 +169,12 @@ PSNR performance plot on Set5
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Scale 2                                                      | Scale 3                                                      | Scale 4                                                      |
 
+- <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0008
+
+| ![scale2](./resources/figure/004-1-validation_Set5_scale_2_8e-4.png) | ![scale3](./resources/figure/004-2-validation_Set5_scale_3_8e-4.png) | ![scale4](./resources/figure/004-3-validation_Set5_scale_4_8e-4.png) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Scale 2                                                      | Scale 3                                                      | Scale 4                                                      |
+
 
 
 ### Objective Quality Assessment
@@ -266,7 +272,38 @@ PSNR performance plot on Set5
 
 ---
 
+-  <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0008
+-  **Set5**
 
+| scale                                         | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
+| --------------------------------------------- | -------------- | --------------- | ---------------- |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%202) | 33.68 / 0.9304 | 37.53 / 0.9586  | 37.08 / 0.9574   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%203) | 30.40 / 0.8682 | 33.66 / 0.9213  | 33.19 / 0.9166   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%204) | 28.43 / 0.8104 | 31.35 / 0.8838  | 30.88 / 0.8743   |
+
+-  **Set14**
+
+| scale                                         | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
+| --------------------------------------------- | -------------- | --------------- | ---------------- |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%202) | 30.24 / 0.8693 | 33.05 / 0.9214  | 32.66 / 0.9105   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%203) | 27.54 / 0.7746 | 29.78 / 0.8318  | 29.54 / 0.8288   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%204) | 26.00 / 0.7029 | 28.02 / 0.7678  | 27.75 / 0.7617   |
+
+-  **B100**
+
+| scale                                         | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
+| --------------------------------------------- | -------------- | --------------- | ---------------- |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%202) | 29.56 / 0.8442 | 31.90 / 0.8960  | 31.65 / 0.8940   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%203) | 27.21 / 0.7401 | 28.83 / 0.7976  | 28.66 / 0.7945   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%204) | 25.96 / 0.6697 | 27.29 / 0.7252  | 27.14 / 0.7209   |
+
+-  **Urban100**
+
+| scale                                         | Bicubic        | VDSR (Original) | VDSR(TensorFlow) |
+| --------------------------------------------- | -------------- | --------------- | ---------------- |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%202) | 26.88 / 0.8410 | 30.77 / 0.9141  | 30.13 / 0.9076   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%203) | 24.46 / 0.7358 | 27.14 / 0.8279  | 26.68 / 0.8171   |
+| ![img](https://tex.s2cms.ru/svg/%5Ctimes%204) | 23.14 / 0.6588 | 25.18 / 0.7525  | 24.84 / 0.7402   |
 
 
 
@@ -288,6 +325,15 @@ PSNR performance plot on Set5
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![img002_gt](./resources/figure/005-1-visual_img002_gt_9e-4.png) | ![img002_lr](./resources/figure/005-2-visual_img002_lr_9e-4.png) | ![img002_sr](./resources/figure/005-3-visual_img002_sr_9e-4.png) |
 | ![img002_gt](./resources/figure/005-1-visual_img002_gt_part_9e-4.png) | ![img_002_lr](./resources/figure/005-2-visual_img002_lr_part_9e-4.png) | ![img](./resources/figure/005-3-visual_img002_sr_part_9e-4.png) |
+
+- <img src="https://tex.s2cms.ru/svg/%5Ctheta" alt="\theta" /> = 0.0008
+
+| Ground Truth                                                 | Bicubic                                                      | VDSR(TensorFlow)                                             |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![img002_gt](./resources/figure/005-1-visual_img002_gt_8e-4.png) | ![img002_lr](./resources/figure/005-2-visual_img002_lr_8e-4.png) | ![img002_sr](./resources/figure/005-3-visual_img002_sr_8e-4.png) |
+| ![img002_gt](./resources/figure/005-1-visual_img002_gt_part_8e-4.png) | ![img_002_lr](./resources/figure/005-2-visual_img002_lr_part_8e-4.png) | ![img](./resources/figure/005-3-visual_img002_sr_part_8e-4.png) |
+
+
 
 
 
