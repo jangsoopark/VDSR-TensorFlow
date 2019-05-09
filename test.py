@@ -4,6 +4,8 @@ import tensorflow as tf
 import skimage.measure as measure
 import scipy.io
 
+import numpy as np
+
 import os
 
 import model
